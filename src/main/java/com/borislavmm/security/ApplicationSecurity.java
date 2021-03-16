@@ -59,3 +59,4 @@ public class ApplicationSecurity extends WebSecurityConfigurerAdapter {
                 .exceptionHandling().accessDeniedPage("/accessDenied");
     }
 }
+

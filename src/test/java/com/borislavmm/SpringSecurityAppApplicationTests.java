@@ -10,4 +10,5 @@ class SpringSecurityAppApplicationTests {
 	void contextLoads() {
 	}
 
+
 }
