@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Document</title>
+    <style>
+		.failed {
+			color: red;
+		}
+	</style>
+</head>
+<body>
+    <form th:action="@{/authenticateUser}"  th:method="POST">
+        <div th:if="${param.error != null}">
+            <i class="failed">Sorry! You entered invalid username/password.</i>
+        </div>
+        Username:
+        <input type="text" name="username">
+        <br>
+        Password:
+        <input type="password" name="password">
+        <br>
+        <input type="submit" value="Login">
+    </form>
+</body>
+</html>
